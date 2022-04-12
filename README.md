@@ -25,7 +25,7 @@
 5.İlgi Alanlarım
   İlgi Alanlarımı içeren sayfa
 6.Login
-  Adminin giriş yapabildiği sayfa
+  Kullanıcının giriş yapabildiği sayfa
 7.İletişim
   Kullanıcıdan form elemanlarıyla bilgi alınacak sayfa
 ```
