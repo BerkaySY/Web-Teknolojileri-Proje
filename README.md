@@ -4,29 +4,29 @@
 `Kendimi ve memleketim olan İstanbul'u tanıtan bir web sitesi yapmak.`
 
 ## Projede Kullanılan Teknolojiler <br/>
-```<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>BootStrap</li>
-<li>PHP/li>
+```
+1.HTML
+2.CSS
+3.JavaScript
+4.BootStrap
+5.PHP
 </ul>
 ```
 
 ## Proje İçeriği
 ```
--Hakkımda
+1.Hakkımda
   Kendimi tanıttığım giriş sayfası niteliğindeki sayfa
--Özgeçmiş
+2.Özgeçmiş
   Eğitim bilgilerimi içeren CV niteliğindeki sayfa
--Şehrim
+3.Şehrim
   Memleketim olan İstanbul hakkında bilgiler içeren sayfa
--Mirasımız
+4.Mirasımız
   İstanbul'a ait kültürel miras değerindeki bir eserin tanıtıldığı sayfa
--İlgi Alanlarım
+5.İlgi Alanlarım
   İlgi Alanlarımı içeren sayfa
--Login
+6.Login
   Adminin giriş yapabildiği sayfa
--İletişim
+7.İletişim
   Kullanıcıdan form elemanlarıyla bilgi alınacak sayfa
 ```
