@@ -4,12 +4,7 @@
 `Kendimi ve memleketim olan İstanbul'u tanıtan bir web sitesi yapmak.`
 
 ## Projede Kullanılan Teknolojiler <br/>
-`-HTML
- -CSS
- -JavaScript
- -BootStrap
- -PHP
-`
+`-HTML  -CSS  -JavaScript  -BootStrap  -PHP`
 
 ## Proje İçeriği
 `-Hakkımda`
