@@ -4,17 +4,19 @@
 `Kendimi ve memleketim olan İstanbul'u tanıtan bir web sitesi yapmak.`
 
 ## Projede Kullanılan Teknolojiler <br/>
-`<ul>
+```<ul>
 <li>HTML</li>
 <li>CSS</li>
 <li>JavaScript</li>
 <li>BootStrap</li>
 <li>PHP/li>
-</ul>`
+</ul>
+```
 
 ## Proje İçeriği
-`-Hakkımda`
-  `Kendimi tanıttığım giriş sayfası niteliğindeki sayfa`
+```
+-Hakkımda
+  Kendimi tanıttığım giriş sayfası niteliğindeki sayfa
 -Özgeçmiş
   Eğitim bilgilerimi içeren CV niteliğindeki sayfa
 -Şehrim
@@ -27,4 +29,4 @@
   Adminin giriş yapabildiği sayfa
 -İletişim
   Kullanıcıdan form elemanlarıyla bilgi alınacak sayfa
-`
+```
