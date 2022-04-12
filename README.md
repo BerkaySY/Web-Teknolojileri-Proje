@@ -10,7 +10,6 @@
 3.JavaScript
 4.BootStrap
 5.PHP
-</ul>
 ```
 
 ## Proje İçeriği
