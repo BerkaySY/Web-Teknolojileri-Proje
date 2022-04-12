@@ -12,8 +12,8 @@
 `
 
 ## Proje İçeriği
-`-Hakkımda
-  Kendimi tanıttığım giriş sayfası niteliğindeki sayfa
+`-Hakkımda`
+  `Kendimi tanıttığım giriş sayfası niteliğindeki sayfa`
 -Özgeçmiş
   Eğitim bilgilerimi içeren CV niteliğindeki sayfa
 -Şehrim
