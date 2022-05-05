@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Montserrat:wght@500&display=swap");
 
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  }
+  
 .container-fluid h1 {
   color: aqua;
   font-family: "Montserrat", sans-serif;
@@ -32,3 +38,30 @@ body {
 #footer-h3{
   color:aqua;
 }
+
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+.list-green{
+  color:rgb(100, 248, 100);
+}
+
+.list-red{
+  color:red;
+}
+
+.list-links{
+  color:aqua;
+}
+
+.list-links:hover{
+  color: yellow;
+}
+
