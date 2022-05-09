@@ -68,10 +68,5 @@ function control(){
     alert("Lütfen Geçerli Bir Telefon Numarası Giriniz!");
     return false;
   }
-  else if(mesaj.length < 25 || mesaj.length > 250){
-    alert("Mesajınız Minumum 25 Maksimum 250 Karakter İçerebilir!");
-    return false;
-  }
-  
 }
 

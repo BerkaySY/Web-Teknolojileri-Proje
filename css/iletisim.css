@@ -53,3 +53,16 @@ html,body {
 .checkbox-margin{
   margin-right: 20px;
 }
+
+a{
+  text-decoration: none;
+}
+
+table{
+  table-layout:fixed;
+}
+
+td{
+  word-wrap:break-word;
+}
+

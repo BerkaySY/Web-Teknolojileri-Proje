@@ -72,79 +72,67 @@
         </div>
       </div>
     </nav>
-      
+
     <div class="container mt-5 ">
       <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 py-3 mb-5"  style="background-color: black ;" >
-          <h2 class="text-center" style="color: aqua;">Benimle İletişime Geçin!</h4>
-          <form action="../php/iletisim.php" method="post" name="iletisim" onsubmit="return control()">
-            <div class="card m-2" style="background-color: black;">
-              <div class="card-body" style="background-color: aquamarine;">
-                <div class="form-group">
-                  <label for="ad">*Adınız:</label>
-                  <input type="text" class="form-control" value="" name="ad" id="ad" >
-                </div>
-                <div class="form-group mt-2">
-                  <label for="soyad">*Soyadınız:</label>
-                  <input type="text" class="form-control" value="" name="soyad" id="soyad">
-                </div>
-                <div class="form-group mt-2">
-                  <label for="email">*Emailiniz:</label>
-                  <input type="text" class="form-control" value="" name="email" id="email">
-                </div>
-                <div class="form-group mt-2">
-                  <label for="telefon">*Telefon Numaranız:</label>
-                  <input type="tel" class="form-control" value="" name="telefon" id="telefon">
-                </div>
-                <div class="form-group mt-2">
-                  <label for="dogum-tarihi">*Doğum Tarihiniz</label>
-                  <input type="date" class="form-control" value="" name="dogum-tarihi" id="dogum-tarihi">
-                </div>
-                <div class="form-group mt-2">
-                  <label for="cinsiyet">*Cinsiyetiniz:</label>
-                  Erkek <input type="radio"  name="cinsiyet" value="erkek" id="erkek">
-                  Kadın <input type="radio" name="cinsiyet" value="kadın" id="kadın">
-                </div>
-                <div class="form-group mt-2">
-                  <label for="programlama">Bildiğiniz Programlama Dillerini İşaretleyiniz:</label>
-                  <br>
-                  C++ <input type="checkbox" name="programlama[]" value="c++" id="c++" class="checkbox-margin">
-                  C <input type="checkbox" name="programlama[]" value="c" id="c" class="checkbox-margin">
-                  C# <input type="checkbox" name="programlama[]" value="c#" id="c#" class="checkbox-margin">
-                  JavaScript <input type="checkbox" name="programlama[]" value="javascript" id="javascript" class="checkbox-margin">
-                  Python <input type="checkbox" name="programlama[]" value="python" id="python" class="checkbox-margin">
-                  Java <input type="checkbox" name="programlama[]" value="java" id="java" class="checkbox-margin">
-                  Go <input type="checkbox" name="programlama[]" value="go" id="go" class="checkbox-margin">
-                </div>
-                <div class="form-group mt-3">
-                  <label for="konu">*Mesaj Konusu:</label>
-                  <select name="konu" id="konu" class="form-control" value="">
-                    <option value="">Lütfen Bir Konu Seçiniz...</option>
-                    <option>Yazılım</option>
-                    <option>Öneri</option>
-                    <option>İş</option>
-                    <option>Diğer</option>
-                  </select>  
-                </div>
-                <div class="form-group mt-2">
-                  <label for="mesaj">*Mesajınız:</label>
-                  <br>
-                  <textarea name="mesaj" id="mesaj" value="" class="form-control" rows="10"></textarea>
-                </div>
-                <div class="form-group mt-2">
-                  <label for="dosya">Dosya Eki:</label>
-                  <br>
-                  <input type="file" class="form-control-file" name="dosya" id="dosya" value="">
-                </div>
-                <div class="mt-3">
-                  <input type="submit" value="GÖNDER" class="btn btn-primary">
-                  <input type="reset" value="TEMİZLE" class="btn btn-warning">
-                </div>
-              </div>
+      <div class="col-3"></div>
+      <div class="col-6 py-3 mb-5"  style="background-color: black ;" >
+          <h2 class="text-center" style="color: aqua;">Form Bilgileri</h2>
+          <div class="card m-2" style="background-color: black;">
+            <div class="card-body" style="background-color: aquamarine;">
+              <table class="text-center table table-dark" >
+                  <tr>
+                      <th>Ad: </th>
+                      <td><?php echo $_POST["ad"]; ?></td>
+                  </tr>
+                  <tr>
+                      <th>Soyad: </th>
+                      <td><?php echo $_POST["soyad"]; ?></td>
+                  </tr>
+                  <tr>
+                      <th>Email: </th>
+                      <td><?php echo $_POST["email"]; ?></td>
+                  </tr>
+                  <tr>
+                      <th>Telefon: </th>
+                      <td><?php echo $_POST["telefon"]; ?></td>
+                  </tr>
+                  <tr>
+                      <th>Doğum Tarihi: </th>
+                      <td><?php echo $_POST["dogum-tarihi"]; ?></td>
+                  </tr>
+                  <tr>
+                      <th>Cinsiyet: </th>
+                      <td><?php echo $_POST["cinsiyet"]; ?></td>
+                  </tr>
+                  <tr>
+                      <th>Bilinen Yazılım Dilleri: </th>
+                      <td><?php 
+                        if(isset($_POST["programlama"])){
+                            $diller = $_POST["programlama"];
+                            foreach($diller as $dil){
+                                echo $dil . ',';
+                            };
+                        }
+                        else{
+                            echo("-");
+                        }
+                        
+                            ?>
+                        </td>
+                  </tr>
+                  <tr>
+                      <th>Mesaj Konusu: </th>
+                      <td><?php echo $_POST["konu"]; ?></td>
+                  </tr>
+                  <tr>
+                      <th>Mesaj: </th>
+                      <td class="dolutabloClass"><?php echo $_POST["mesaj"]; ?></td>
+                  </tr>
+              </table>
             </div>
-          </form>
-        </div>  
+          </div>
+        </div>
         <div class="col-3"></div>
       </div>
     </div>
