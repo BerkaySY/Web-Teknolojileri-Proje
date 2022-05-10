@@ -72,36 +72,26 @@
         </div>
       </div>
     </nav>
-
-    <div class="container mt-5">
+    
+    <div class="container" align="center">
       <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4 mt-5 py-3" style="background-color: aqua;">
-          <h2 class="text-center" style="color:black;">LOGIN</h2>
-          <form action="../php/login.php" method="post" name="login"  onsubmit="return formControl()">
-            <div class="card m-2" style="background-color: aqua;">
-              <div class="card-body" style="background-color: aquamarine;">
-                <div class="form-group">
-                  <label for="kullanıcı">Kullanıcı Adı:</label>
-                  <input type="text" class="form-control" value="" name="kullanıcı" id="kullanıcı">
-                </div>
-                <div class="form-group mt-2">
-                  <label for="sifre">Şifre:</label>
-                  <input type="password" class="form-control" value="" name="sifre" id="sifre">
-                </div>
-                <div class="form-group mt-2">
-                  <input type="submit" value="GİRİŞ YAP" class="btn btn-primary form-control">
-                </div>
-              </div>
-            </div>
-          </form>
+        <div class="col-12">
+          <div class="card bg-fullblack mt-3 p-5 " style="color: red;">
+              <?php
+                if($_POST["kullanıcı"] == "b211210040@sakarya.edu.tr" && $_POST["sifre"] == "b211210040"){
+                    echo "Hoşgeldiniz " .$_POST["kullanıcı"];
+                    echo "<br> Ana Sayfaya Yönlendiriliyorsunuz!";
+                    header("refresh:3; ../html/index.html");
+                }
+                else{
+                    echo "Kullanıcı Adı veya Şifre Hatalı!<br>";
+                    echo "Login Sayfasına Yönlendiriliyorsunuz!";
+                    header("refresh:3; ../html/login.html");
+                }
+              ?>
+          </div>
         </div>
       </div>
     </div>
-  
-    
-
-    
-    
-  </body>
+    </body>
 </html>
