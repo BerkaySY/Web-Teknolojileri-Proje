@@ -42,3 +42,19 @@ html,body {
 a{
   text-decoration: none;
 }
+
+.card-title{
+  color:red;
+}
+
+h2{
+  color:red;
+}
+
+.card{
+  background-color: black;
+}
+
+.bölümler{
+  background-color: aqua;
+}

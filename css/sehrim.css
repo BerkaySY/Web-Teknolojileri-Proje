@@ -48,3 +48,30 @@ html,body {
 a{
   text-decoration: none;
 }
+
+#istanbul-tanıtım{
+  color:white;
+}
+
+.bölüm-basliklari{
+  color:red;
+  text-align: center;
+}
+
+.gezilecek-yerler-card{
+  width: 25rem; 
+  display: inline-block;
+}
+
+.gezilecek-yerler-bg{
+  background-color: wheat;
+}
+
+.gezilecek-yerler-baslik{
+  color:red;
+}
+
+.card-text{
+  color:black;
+}
+

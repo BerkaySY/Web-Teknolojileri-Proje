@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: aqua;
+  background-color: rgb(46, 42, 42);
 }
 
 .footer-link{
@@ -31,4 +31,93 @@ body {
 
 #footer-h3{
   color:aqua;
+}
+
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
+.search {
+  background-color: aqua;
+  border: 2px solid black;
+  border-radius: 5px;
+  color:  black;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+h3{
+  color: aqua;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:2%;
+}
+
+
+.movie {
+  border-radius: 10px;
+  box-shadow: 0 2px 2px black;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem;
+  width: 300px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  padding: .5rem 1rem 1rem;
+  
+}
+
+.movie-info span {
+  background-color: hsl(236, 38%, 21%);
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+  color: green;
+}
+
+.movie-info span.yellow {
+  color: yellow;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.overview {
+  background-color: red;
+  color:black;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+a{
+  text-decoration: none;
 }

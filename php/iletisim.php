@@ -26,7 +26,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="..\css\iletisim.css" />
+    <link rel="stylesheet" href="../css/iletisim.css" />
     <script src="../js/iletisim.js"></script>
   </head>
   <body>
@@ -72,7 +72,7 @@
         </div>
       </div>
     </nav>
-
+    <?php header("refresh:5; url=../iletisim.html"); ?>
     <div class="container mt-5 ">
       <div class="row">
       <div class="col-3"></div>
@@ -118,7 +118,7 @@
                             echo("-");
                         }
                         
-                            ?>
+                          ?>
                         </td>
                   </tr>
                   <tr>
@@ -136,7 +136,7 @@
         <div class="col-3"></div>
       </div>
     </div>
-
+    
     <footer class="bg-fullblack py-5">
       <div class="container">
         <div class="row">

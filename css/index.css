@@ -42,3 +42,32 @@ html,body {
 a{
   text-decoration: none;
 }
+
+h2{
+  color:red;
+}
+
+.hobiler-card-body{
+  background-color: aqua;
+}
+
+.hobiler-card{
+  width: 20rem; 
+  display: inline-block;
+}
+
+#steam{
+  color:green;
+}
+
+#benkimim-card{
+  background-color: black;
+}
+
+#benkimim-card-body{
+  background-color: black;
+}
+
+#benkimim-p{
+  color:white;
+}

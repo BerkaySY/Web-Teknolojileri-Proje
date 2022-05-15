@@ -26,7 +26,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="..\css\login.css" />
+    <link rel="stylesheet" href="../css/login.css" />
     <script src="../js/login.js"></script>
   </head>
   <body>
@@ -76,17 +76,17 @@
     <div class="container" align="center">
       <div class="row">
         <div class="col-12">
-          <div class="card bg-fullblack mt-3 p-5 " style="color: red;">
+          <div class="card bg-fullblack mt-3 p-5 " style="color: red; background-color: black;">
               <?php
                 if($_POST["kullanıcı"] == "b211210040@sakarya.edu.tr" && $_POST["sifre"] == "b211210040"){
                     echo "Hoşgeldiniz " .$_POST["kullanıcı"];
                     echo "<br> Ana Sayfaya Yönlendiriliyorsunuz!";
-                    header("refresh:3; ../html/index.html");
+                    header("refresh:3; ../index.html");
                 }
                 else{
                     echo "Kullanıcı Adı veya Şifre Hatalı!<br>";
                     echo "Login Sayfasına Yönlendiriliyorsunuz!";
-                    header("refresh:3; ../html/login.html");
+                    header("refresh:3; ../login.html");
                 }
               ?>
           </div>

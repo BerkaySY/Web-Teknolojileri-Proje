@@ -68,5 +68,6 @@ function control(){
     alert("Lütfen Geçerli Bir Telefon Numarası Giriniz!");
     return false;
   }
+  
 }
 

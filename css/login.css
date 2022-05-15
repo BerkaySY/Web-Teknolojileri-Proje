@@ -37,4 +37,12 @@ html,body {
   margin:0;
   padding:0;
   overflow-x:hidden;
-  }
+}
+
+.card{
+  background-color: aqua;
+}
+
+.card-body{
+  background-color: aquamarine;
+}
